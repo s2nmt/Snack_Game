@@ -1,1 +1,0 @@
-cmd_/home/s2nmt/work/Snake-Game-on-BeagleBone-Black-with-I2C-OLED/button_driver/button_driver.mod := { echo  /home/s2nmt/work/Snake-Game-on-BeagleBone-Black-with-I2C-OLED/button_driver/button_driver.o;  echo; } > /home/s2nmt/work/Snake-Game-on-BeagleBone-Black-with-I2C-OLED/button_driver/button_driver.mod
