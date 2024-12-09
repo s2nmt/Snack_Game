@@ -217,5 +217,5 @@ module_init(ssd1306_init);
 module_exit(ssd1306_exit);
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("TungNHS");
+MODULE_AUTHOR("Minh Tuan");
 MODULE_DESCRIPTION("SSD1306 OLED driver");

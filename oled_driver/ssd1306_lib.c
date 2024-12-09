@@ -216,7 +216,6 @@ void ssd1306_clear_full(struct ssd1306_i2c_module *module)
 int ssd1306_display_init(struct ssd1306_i2c_module *module)
 {
     msleep(100);
-   
     ssd1306_write_command(module, true, 0xAE); // Entire Display OFF
     ssd1306_write_command(module, true, 0xA8); // Set Multiplex Ratio
     ssd1306_write_command(module, true, 0x3F); // 64 COM lines
@@ -235,18 +234,17 @@ int ssd1306_display_init(struct ssd1306_i2c_module *module)
     ssd1306_write_command(module, true, 0x80); // Default Setting for Display Clock Divide Ratio and Oscillator Frequency that is recommended
     ssd1306_write_command(module, true, 0x8D); //  Charge pump
     ssd1306_write_command(module, true, 0x14); // Enable charge dump during display on
-	ssd1306_write_command(module, true, 0xAF); // Display ON in normal mode
-	ssd1306_set_cursor(module, 0, 0);
-	ssd1306_print_string(module, "WELCOME TO TUANTNT19\n");
-	ssd1306_set_cursor(module, 1, 0);
-	ssd1306_print_string(module, "Loading ");
-	int i;
-	for (i = 0; i<3; i++)
-	{
-		ssd1306_print_string(module, ".");
-		msleep(500);
-	}
-	ssd1306_clear_full(module);
-
-	return 0;
+    ssd1306_write_command(module, true, 0xAF); // Display ON in normal mode
+    ssd1306_set_cursor(module, 0, 0);
+    ssd1306_print_string(module, "WELCOME TO TUANTNT19\n");
+    ssd1306_set_cursor(module, 1, 0);
+    ssd1306_print_string(module, "Loading "); 
+    int i;
+    for (i = 0; i<3; i++)
+    {
+	ssd1306_print_string(module, ".");
+	msleep(500);
+    }
+    ssd1306_clear_full(module);
+    return 0;
 }

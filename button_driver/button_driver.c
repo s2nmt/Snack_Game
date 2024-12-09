@@ -38,7 +38,7 @@ char btn_state[1];  // Buffer to store button state
 gpio_btn_dev btn_dev; // The button device structure
 
 /* Driver metadata */
-#define DRIVER_AUTHOR "TungNHS"
+#define DRIVER_AUTHOR "Minh Tuan"
 #define DRIVER_DESC   "GPIO Button Device Tree Driver"
 
 /* Button states */

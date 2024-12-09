@@ -30,7 +30,7 @@ int main() {
         // Display the "Play Again?" message on the OLED
         OLED_SetCursor(fd_ssd, 25, 2);  // Set cursor to position (25, 2)
         OLED_Display(fd_ssd, "PLAY AGAIN ?");  // Display message "PLAY AGAIN ?"
-        
+
         OLED_SetCursor(fd_ssd, 0, 3);  // Set cursor to position (0, 3)
         OLED_Display(fd_ssd, "ENTER. YES  Other. NO");  // Display options "ENTER. YES Other. NO"
 
