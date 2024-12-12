@@ -26,5 +26,5 @@ On ubuntu:
 On beaglebone black:
 
 - sudo insmod button_driver and oled_driver
-- sudo chmod 0666 my_button_driver and my_ssd1306
+- sudo chmod 666 my_button_snake and /dev/my_ssd1306_device
 - ./main_static to execute program.
