@@ -13,8 +13,10 @@ This is Snake Game project to learn Linux driver. I use beagle bone black, oled 
 | 6   | Down Button       | P8_10  | 
 | 7   | Left Button       | P8_12  | 
 | 8   | Right Button      | P8_11  | 
-| 9   | Right Button      | P8_09  | 
+| 9   | Enter Button      | P8_09  | 
 
+## Pinout
+![alt text](image.png)
 ## How to use
 
 On ubuntu:
@@ -26,5 +28,9 @@ On ubuntu:
 On beaglebone black:
 
 - sudo insmod button_driver and oled_driver
-- sudo chmod 666 my_button_snake and /dev/my_ssd1306_device
+- sudo chmod 0666 my_button_snake and /dev/my_ssd1306_device
 - ./main_static to execute program.
+
+
+## Result
+![alt text](snakegame.jpg)
